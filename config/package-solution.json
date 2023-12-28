@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "form-client-side-solution",
+    "id": "af6d911d-5608-400b-8ecb-d515102be19e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Form description"
+      },
+      "longDescription": {
+        "default": "Form description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "form Feature",
+        "description": "The feature that activates elements of the form solution.",
+        "id": "266fb401-a715-44e3-a363-2e76f85666f9",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/form.sppkg"
+  }
+}

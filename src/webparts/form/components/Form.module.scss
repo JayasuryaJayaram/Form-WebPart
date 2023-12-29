@@ -109,7 +109,7 @@
 
 .inputField {
   width: 95%;
-  height: 91px;
+  height: 25px;
   flex-shrink: 0;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.35);
@@ -123,6 +123,7 @@
   font-weight: 400;
   line-height: 20px;
   border: none;
+  padding: 10px 5px 60px 15px;
 }
 
 .inputField:focus .inputField:focus-visible {

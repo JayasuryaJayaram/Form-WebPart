@@ -11,6 +11,12 @@ export const Form = (props: IFormProps) => {
   const [isAnswerEmpty, setIsAnswerEmpty] = useState<boolean>(true);
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
 
+  // const css = `
+  // .input:focus .input:focus-visible {
+  //   border: none;
+  //   outline: -webkit-focus-ring-color auto 1px;
+  // } `;
+
   // Update the onChange event handler for the input field
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
@@ -51,12 +57,13 @@ export const Form = (props: IFormProps) => {
 
   return (
     <>
+      {/* <style>{css}</style> */}
       <section className={styles.container}>
         <div className={styles.column1}>
           <img
             src={require("../assets/Form_img.svg")}
             alt="image should be here"
-            style={{ marginBottom: "30px" }}
+            style={{ display: "block", marginBottom: "30px" }}
           />
           <p className={styles.header}>Share without revealing</p>
           <p className={styles.description}>
@@ -103,7 +110,6 @@ export const Form = (props: IFormProps) => {
         visible={isModalVisible}
         onCancel={handleModalOk}
         footer={[
-          // Customizing the footer with only the 'OK' button
           <Button key="submit" type="primary" onClick={handleModalOk}>
             OK
           </Button>,

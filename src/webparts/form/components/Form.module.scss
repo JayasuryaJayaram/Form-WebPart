@@ -43,7 +43,8 @@
   height: 100%;
   background: linear-gradient(270deg, #233f81 0%, #283657 100%);
   display: flex;
-  padding: 5%;
+  padding: 4% 4% 7%;
+  position: relative;
 }
 
 .header {
@@ -55,9 +56,11 @@
   letter-spacing: 0.3px;
   word-wrap: break-word;
   margin-bottom: 0;
+  display: block;
 }
 
 .description {
+  display: block;
   color: white;
   font-size: 16px;
   font-family: Segoe UI;
@@ -75,9 +78,10 @@
   top: 25px;
 }
 .column2 {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  position: absolute;
+  height: 70%;
+  right: 82px;
+  width: 50%;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 4px;
   border-top: 4px solid #40c4f5;
@@ -123,10 +127,11 @@
   font-weight: 400;
   line-height: 20px;
   border: none;
-  padding: 10px 5px 60px 15px;
+  padding: 15px 5px 60px 15px;
 }
 
-.inputField:focus .inputField:focus-visible {
+input:focus,
+input:focus-visible {
   border: none;
   outline: none;
 }
@@ -169,8 +174,9 @@
   .column2 {
     width: 82%;
     margin: 25px 5% 5%;
-
-    padding-bottom: 25px;
+    position: relative;
+    right: 0px;
+    width: auto;
   }
 
   .formTitle {

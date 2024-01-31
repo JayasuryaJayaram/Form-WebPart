@@ -43,7 +43,7 @@
   height: 100%;
   background: linear-gradient(270deg, #233f81 0%, #283657 100%);
   display: flex;
-  padding: 4% 4% 7%;
+  padding: 4%;
   position: relative;
 }
 
@@ -78,9 +78,9 @@
   top: 25px;
 }
 .column2 {
-  position: absolute;
+  // position: absolute;
   height: 70%;
-  right: 82px;
+  // right: 82px;
   width: 50%;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 4px;
